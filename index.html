@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="" alt="Image 1" onclick="openModal(0)">
+    <img src="https://picsum.photos/id/1025/300/200" alt="Image 2" onclick="openModal(1)">
+    <img src="https://picsum.photos/id/1035/300/200" alt="Image 3" onclick="openModal(2)">
+    <img src="https://picsum.photos/id/1045/300/200" alt="Image 4" onclick="openModal(3)">
+    <img src="https://picsum.photos/id/1055/300/200" alt="Image 5" onclick="openModal(4)">
+  </div>
+
+  <!-- Modal for enlarged image -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div class="nav-buttons">
+      <button onclick="prevImage()">&#10094; Prev</button>
+      <button onclick="nextImage()">Next &#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
